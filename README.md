@@ -15,9 +15,10 @@ Answers to Questions
 3. What is Event Bubbling? And how does it work?
 
    Answer: Events bubble up from the target element to its ancestors.
-            <div id="parent">
-              <button id="child">Click Me</button>
-           </div>
+               <div id="parent">
+               <button id="child">Click Me</button>
+               </div>
+               
               document.getElementById('child').addEventListener('click', () => {
                 console.log('Child clicked');
               });
@@ -25,6 +26,7 @@ Answers to Questions
              document.getElementById('parent').addEventListener('click', () => {
               console.log('Parent clicked');
             });
+            
           when button clicked , then child => parent => parent => parent .... =>document.
 4. What is Event Delegation in JavaScript? Why is it useful?
    
