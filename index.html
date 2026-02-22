@@ -41,8 +41,8 @@
                 </div>
                 <div class="card w-90 bg-base-100 card-xs shadow">
                     <div class="card-body">
-                        <h2 class="card-title text-[#323B49]" id="rejectCount">Rejected</h2>
-                        <p class="font-bold text-2xl text-[#EF4444]">0</p>
+                        <h2 class="card-title text-[#323B49]" >Rejected</h2>
+                        <p class="font-bold text-2xl text-[#EF4444]" id="rejectCount">0</p>
                     </div>
                 </div>
             </div>
@@ -59,64 +59,66 @@
             <button onclick="toggleStyle('interview-btn')" id="interview-btn" class="btn btn-soft bg-base-100 text-[#64748B]">Interview</button>
             <button onclick="toggleStyle('reject-btn')" id="reject-btn" class="btn btn-soft bg-base-100 text-[#64748B]">Rejected</button>
         </div>
+        <section id="filtered-jobs" class="hidden">
+
+        </section>
         <section id="all-jobs" class="space-y-4">
-            <div class="card w-[100%] bg-base-100 card-md shadow">
-                <div class="flex">
+            <div class="flex card w-[100%] bg-base-100 card-md shadow flex-row">
+                
                     <div class="card-body space-y-5">
                         <div class="flex-col space-y-1">
-                            <h2 class="card-title text-[#002C5C]">Mobile First Corp</h2>
-                            <p class=" text-[#64748B]">React Native Developer</p>
+                            <h2 class="jobs-name card-title text-[#002C5C]">Mobile First Corp</h2>
+                            <p class="jobs-position text-[#64748B]">React Native Developer</p>
                         </div>
-                        <p class=" text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
+                        <p class="jobs-salary text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
                         <div class="space-y-2">
-                            <div id="status" class="py-2 px-3 bg-[#EEF4FF] w-28 rounded-sm font-medium text-[#002C5C]">
+                            <div id="status" class="jobs-status py-2 px-3 bg-[#EEF4FF] w-28 rounded-sm font-medium text-[#002C5C] text-center">
                                 Not
                                 Applied</div>
-                            <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work
+                            <p class="jobs-description text-[#323B49]">Build cross-platform mobile applications using React Native. Work
                                 on
                                 products used by millions of users worldwide.</p>
                         </div>
                         <div class="flex gap-2">
-                            <button class="btn btn-outline btn-accent">Interview</button>
-                            <button class="btn btn-outline btn-error">Rejected</button>
+                            <button class="interview-btn btn btn-outline btn-accent">Interview</button>
+                            <button class="rejected-btn btn btn-outline btn-error">Rejected</button>
                         </div>
                     </div>
                     <div class="p-6">
                         <button class="border border-[#F1F2F4] rounded-full p-4 text-[#64748B] cursor-pointer"><i
                                 class="fa-regular fa-trash-can"></i></button>
                     </div>
-                </div>
+                
             </div>
-            <div class="card w-[100%] bg-base-100 card-md shadow">
-                <div class="flex ">
+            <div class="flex card w-[100%] bg-base-100 card-md shadow flex-row">
+                
                     <div class="card-body space-y-5">
                         <div class="flex-col space-y-1">
-                            <h2 class="card-title text-[#002C5C]">DataViz Solutions</h2>
-                            <p class=" text-[#64748B]">Data Visualization Specialist</p>
+                            <h2 class="jobs-name card-title text-[#002C5C]">DataViz Solutions</h2>
+                            <p class="jobs-position text-[#64748B]">Data Visualization Specialist</p>
                         </div>
 
-                        <p class=" text-[#64748B]">Boston, MA • Full-time • $125,000 - $165,000</p>
+                        <p class="jobs-salary text-[#64748B]">Boston, MA • Full-time • $125,000 - $165,000</p>
                         <div class="space-y-2">
-                            <div id="status" class="py-2 px-3 bg-[#EEF4FF] w-28 rounded-sm font-medium text-[#002C5C]">
-                                Not
-                                Applied</div>
-                            <p class="text-[#323B49]">Transform complex data into compelling visualizations. Required
+                            <div id="status" class="jobs-status py-2 px-3 bg-[#EEF4FF] w-28 rounded-sm font-medium text-[#002C5C]">
+                                Not Applied</div>
+                            <p class="jobs-description text-[#323B49]">Transform complex data into compelling visualizations. Required
                                 skills: D3.js, React, and strong analytical thinking.
                             </p>
                         </div>
                         <div class="flex gap-2">
-                            <button class="btn btn-outline btn-accent">Interview</button>
-                            <button class="btn btn-outline btn-error">Rejected</button>
+                            <button class="interview-btn btn btn-outline btn-accent">Interview</button>
+                            <button class="rejected-btn btn btn-outline btn-error">Rejected</button>
                         </div>
                     </div>
                  <div class="p-6">
                         <button class="border border-[#F1F2F4] rounded-full p-4 text-[#64748B] cursor-pointer"><i
                                 class="fa-regular fa-trash-can"></i></button>
                     </div>
-                </div>
+                
             </div>
-            <div class="card w-[100%] bg-base-100 card-md shadow">
-               <div class="flex">
+            <div class="flex card w-[100%] bg-base-100 card-md shadow flex-row">
+              
                   <div class="card-body space-y-5">
                     
                         <div class="flex-col space-y-1">
@@ -140,10 +142,10 @@
                         <button class="border border-[#F1F2F4] rounded-full p-4 text-[#64748B] cursor-pointer"><i
                                 class="fa-regular fa-trash-can"></i></button>
                     </div>
-               </div>
+               
             </div>
-            <div class="card w-[100%] bg-base-100 card-md shadow">
-                <div class="flex">
+            <div class="flex card w-[100%] bg-base-100 card-md shadow flex-row">
+                
                     <div class="card-body space-y-5">
   
                         <div class="flex-col space-y-1">
@@ -167,10 +169,10 @@
                         <button class="border border-[#F1F2F4] rounded-full p-4 text-[#64748B] cursor-pointer"><i
                                 class="fa-regular fa-trash-can"></i></button>
                     </div>
-                </div>
+                
             </div>
-            <div class="card w-[100%] bg-base-100 card-md shadow">
-               <div class="flex">
+            <div class="flex card w-[100%] bg-base-100 card-md shadow flex-row">
+               
                  <div class="card-body space-y-5">
 
                         <div class="flex-col space-y-1">
@@ -194,10 +196,10 @@
                         <button class="border border-[#F1F2F4] rounded-full p-4 text-[#64748B] cursor-pointer"><i
                                 class="fa-regular fa-trash-can"></i></button>
                     </div>
-               </div>
+               
             </div>
-            <div class="card w-[100%] bg-base-100 card-md shadow">
-               <div class="flex">
+            <div class="flex card w-[100%] bg-base-100 card-md shadow flex-row">
+               
                  <div class="card-body space-y-5">
 
                         <div class="flex-col space-y-1">
@@ -222,10 +224,10 @@
                         <button class="border border-[#F1F2F4] rounded-full p-4 text-[#64748B] cursor-pointer"><i
                                 class="fa-regular fa-trash-can"></i></button>
                     </div>
-               </div>
+               
             </div>
-            <div class="card w-[100%] bg-base-100 card-md shadow">
-                <div class="flex">
+            <div class="flex card w-[100%] bg-base-100 card-md shadow flex-row">
+                
                     <div class="card-body space-y-5">
              
                         <div class="flex-col space-y-1">
@@ -249,10 +251,10 @@
                         <button class="border border-[#F1F2F4] rounded-full p-4 text-[#64748B] cursor-pointer"><i
                                 class="fa-regular fa-trash-can"></i></button>
                     </div>
-                </div>
+                
             </div>
-            <div class="card w-[100%] bg-base-100 card-md shadow">
-               <div class="flex">
+            <div class="flex card w-[100%] bg-base-100 card-md shadow flex-row">
+               
                  <div class="card-body space-y-5">
          
                         <div class="flex-col space-y-1">
@@ -277,7 +279,7 @@
                         <button class="border border-[#F1F2F4] rounded-full p-4 text-[#64748B] cursor-pointer"><i
                                 class="fa-regular fa-trash-can"></i></button>
                     </div>
-               </div>
+               
             </div>
         </section>
     </main>
