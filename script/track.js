@@ -129,7 +129,7 @@ mainContainer.addEventListener('click', function (event) {
         if (currentStatus == 'interview-btn') {
             if (interviewList.length == 0) {
                 renderNoInterview();
-                showJobs.innerText = '0 Jobs';
+                 showJobs.innerText = '0 Jobs';
             } else {
                 renderInterview();
                 showJobs.innerText = interviewList.length + ' of ' + allJobs.children.length + ' Jobs';
@@ -142,7 +142,7 @@ mainContainer.addEventListener('click', function (event) {
         const jobsName = parentNode.querySelector('.jobs-name').innerText;
         parentNode.remove();
         interviewList = interviewList.filter(item => item.jobsName !== jobsName);
-        rejectedList = rejectedList.filter(item => item.jobsName !== jobsName);
+         rejectedList = rejectedList.filter(item => item.jobsName !== jobsName);
         showJobs.innerText = allJobs.children.length + ' Jobs';
         if (currentStatus == 'interview-btn') {
             if (interviewList.length == 0) {
